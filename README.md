@@ -26,10 +26,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-Execute the recommendation system with the following command:
-```python
-python recommend.py
-```
+Download the notebook and run the notebook in the google colab or jupyter notebook.
 
 ## Data Description
 - **Articles Dataset**: Contains detailed metadata for each article including title, author, and the full text content.
@@ -51,6 +48,43 @@ python recommend.py
 - **F1 Score**: Combines precision and recall into a single metric to provide a balanced view of model performance.
 - **NDCG (Normalized Discounted Cumulative Gain)**: Evaluates the ranking quality of the recommended articles, giving more importance to highly relevant articles appearing earlier in the list.
 
+### Model Performance
+
+#### Hybrid Model:
+- **Recall@5**: 0.316287
+- **Recall@10**: 0.434416
+- **MRR**: 0.445120
+- **NDCG**: 0.526664
+
+#### Collaborative Filtering:
+- **Recall@5**: 0.268346
+- **Recall@10**: 0.401048
+- **MRR**: 0.264244
+- **NDCG**: 0.548831
+
+#### Content-Based:
+- **Recall@5**: 0.188187
+- **Recall@10**: 0.271925
+- **MRR**: 0.294764
+- **NDCG**: 0.495701
+
+### Key Insights
+
+- The hybrid recommendation model demonstrates superior performance in terms of recall and MRR, making it the best overall model for recommending relevant items.
+- The collaborative filtering model excels in ranking quality, as indicated by the highest NDCG, though it falls behind in recall metrics.
+- The content-based model performs the least effectively among the three.
+
+---
+
+This README provides a comprehensive overview of the project, including the structure, installation steps, usage instructions, and results of the model evaluations. If you have any questions or need further details, feel free to reach out!
+Contributing
+Contributions are welcome! Please read the CONTRIBUTING.md for guidelines on how to contribute to this project.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
 ## Contributing
 Contributions to this project are welcome. To contribute:
 1. Fork the repository.
@@ -63,7 +97,7 @@ Contributions to this project are welcome. To contribute:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Authors
-- Your Name
+- Bharath Gajula
 
 ## Acknowledgments
 Special thanks to all contributors and those who provided feedback and suggestions to enhance the functionality and accuracy of the system.
