@@ -1,5 +1,5 @@
 
-# Cluster Based Article Recommneder System
+# Cluster Based Article Recommender System
 
 ## Project Overview
 This project develops an advanced article recommendation system that leverages machine learning and natural language processing (NLP) techniques to provide personalized article recommendations. The system combines content-based filtering, principal component analysis (PCA) for dimensionality reduction, and TF-IDF vectorization to create a sophisticated tool for recommending articles based on user preferences and content relevance.
